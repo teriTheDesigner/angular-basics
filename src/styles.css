@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme1 {
+  --primary1: #b22222;
+  --primary2: #ff6b6b;
+}
+
+.theme2 {
+  --primary1: #006400;
+  --primary2: #7cfc00;
+}
