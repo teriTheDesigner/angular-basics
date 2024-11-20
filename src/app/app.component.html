@@ -1,7 +1,11 @@
-<main class="theme1">
-  <div class="content">
-    <app-firstname></app-firstname>
-  </div>
+<main [class.theme1]="isTheme1" [class.theme2]="!isTheme1">
+  <app-firstname></app-firstname>
+  <button
+    (click)="toggleTheme()"
+    class="bg-primary1 p-2 text-pr rounded-md text-primary2"
+  >
+    Change Theme
+  </button>
 </main>
 
 <router-outlet />

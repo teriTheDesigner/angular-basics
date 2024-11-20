@@ -11,4 +11,9 @@ import { FirstnameComponent } from './components/firstname/firstname.component';
 })
 export class AppComponent {
   title = 'angular-basics';
+  isTheme1 = true;
+
+  toggleTheme() {
+    this.isTheme1 = !this.isTheme1;
+  }
 }
